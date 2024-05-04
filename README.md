@@ -47,7 +47,7 @@ Constraint File (cylindrical)
   }
 ```
 
-
+## Content prior to fork
 Hollow generates fake atoms that identifies voids, pockets, channels and depressions in a protein structure specified in the PDB format. 
 
 There are two effective modes to run this program: an automated mode that explicitly deduces the molecular surface, and a constrained mode that works in a pre-specified volume.
