@@ -3,7 +3,20 @@
 ===================================================
  Hollow 1.1 (c) 2009.  Bosco Ho and Franz Gruswitz 
 ===================================================
+# Installation
+```
+conda install -n hollow python=2.7 pip numpy -c condaforge
+python setup.py install --user --install-scripts \[path to installation\]
+```
 
+# Use (Automatic)
+Constraint File
+```
+
+```
+```
+
+```
 
 Hollow generates fake atoms that identifies voids, pockets, channels and depressions in a protein structure specified in the PDB format. 
 
