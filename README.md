@@ -1,5 +1,5 @@
 # Hollow 1.1 (c) 2009.  Bosco Ho and Franz Gruswitz 
-
+Following installation and usage partly written, partly adapted by jnoh2
 ### Installation
 ```
 conda install -n hollow python=2.7 pip numpy -c condaforge
