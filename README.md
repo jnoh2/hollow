@@ -11,14 +11,42 @@ python setup.py install --user --install-scripts [path to installation]
 hollow -g 0.2 -o [outpath] [inpath]
 ```
 
-# Use (Constrained)
-Constraint File
-```
-
-```
+### Use (Constrained)
 ```
 hollow -g 0.2 -o [outpath] -c [constraintpath] [inpath]
 ```
+Constraint File (spherical)
+```
+{
+    'type': 'sphere',          # 'cylinder' or 'sphere'
+    'remove_asa_shell': True,  # True or False
+    'radius': 13.0,      
+
+    'chain1': 'A',             
+    'res_num1': 107,     
+    'atom1': 'CD1',      
+}
+```
+Constraint File (cylindrical)
+```
+{
+    'type': 'cylinder',          # 'cylinder' or 'sphere'
+    'remove_asa_shell': False,   # True or False
+
+    'radius': 10.0,      
+
+    'chain1': 'F',              
+    'res_num1': 57,             
+    'atom1': 'CE1',             
+    'axis_offset1': 0,          
+                                
+    'chain2': 'G',              
+    'res_num2': 185,            
+    'atom2': 'CA',              
+    'axis_offset2': -3,
+  }
+```
+
 
 Hollow generates fake atoms that identifies voids, pockets, channels and depressions in a protein structure specified in the PDB format. 
 
